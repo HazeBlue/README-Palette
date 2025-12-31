@@ -282,7 +282,7 @@ This project is licensed under the [MIT](LICENSE) License.
 
 **README Palette Team**
 
-- GitHub: [@HazeBlue](https://github.com/HazeBlue/README-Palette)
+- GitHub: [@HazeBlue](https://github.com/HazeBlue)
 
 ---
 
@@ -297,4 +297,5 @@ This project is licensed under the [MIT](LICENSE) License.
 
 
 ⭐ 如果这个项目对你有帮助，欢迎给个 Star！| If this project helps you, please give it a Star!
+
 
