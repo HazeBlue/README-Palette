@@ -282,7 +282,7 @@ This project is licensed under the [MIT](LICENSE) License.
 
 **README Palette Team**
 
-- GitHub: [@your-username](https://github.com/your-username)
+- GitHub: [@HazeBlue]((https://github.com/HazeBlue/README-Palette))
 
 ---
 
@@ -294,5 +294,6 @@ This project is licensed under the [MIT](LICENSE) License.
 - [Placeholder.com](https://via.placeholder.com/) - 占位符图片 / Placeholder Images
 
 ---
+
 
 ⭐ 如果这个项目对你有帮助，欢迎给个 Star！| If this project helps you, please give it a Star!
