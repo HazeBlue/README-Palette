@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README Palette - 优雅的 README 生成器</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">📝 README Palette</h1>
+                <p class="tagline">让 README 文档生成变得简单优雅</p>
+            </div>
+            <div class="theme-selector">
+                <button class="theme-btn active" data-theme="light">☀️ Light</button>
+                <button class="theme-btn" data-theme="mint">🌿 Mint</button>
+                <button class="theme-btn" data-theme="sky">🌤️ Sky</button>
+                <button class="theme-btn" data-theme="lavender">💜 Lavender</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="form-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>📋 项目信息</h2>
+                        <button id="clearBtn" class="btn-clear">🗑️ 清空表单</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectName">项目名称</label>
+                        <input type="text" id="projectName" placeholder="例如：My Awesome Project">
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDesc">项目简介</label>
+                        <textarea id="projectDesc" rows="3" placeholder="一句话描述你的项目..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="features">功能列表（每行一个）</label>
+                        <textarea id="features" rows="5" placeholder="✨ 功能1&#10;🚀 功能2&#10;🎨 功能3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="techStack">技术栈（用逗号分隔）</label>
+                        <input type="text" id="techStack" placeholder="例如：HTML, CSS, JavaScript, Vue.js">
+                    </div>
+                    <div class="form-group">
+                        <label for="install">安装方式</label>
+                        <textarea id="install" rows="3" placeholder="例如：npm install 或 git clone..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="usage">使用示例</label>
+                        <textarea id="usage" rows="4" placeholder="代码示例..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="screenshots">截图说明（每行一个，留空则使用占位符）</label>
+                        <textarea id="screenshots" rows="3" placeholder="截图1说明&#10;截图2说明（留空使用占位符）"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">作者信息</label>
+                        <input type="text" id="author" placeholder="你的名字或 GitHub 用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="githubUsername">GitHub 用户名（用于生成徽章）</label>
+                        <input type="text" id="githubUsername" placeholder="your-username">
+                    </div>
+                    <div class="form-group">
+                        <label for="repoName">仓库名称（用于生成徽章）</label>
+                        <input type="text" id="repoName" placeholder="repo-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="btcAddress">BTC 地址（打赏）</label>
+                        <input type="text" id="btcAddress" placeholder="可选：1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa">
+                    </div>
+                    <div class="form-group">
+                        <label for="ethAddress">ETH 地址（打赏）</label>
+                        <input type="text" id="ethAddress" placeholder="可选：0x...">
+                    </div>
+                    <div class="form-group">
+                        <label for="usdtAddress">USDT 地址（打赏）</label>
+                        <input type="text" id="usdtAddress" placeholder="可选：0x...">
+                    </div>
+                    <div class="form-group">
+                        <label for="license">许可证</label>
+                        <select id="license">
+                            <option value="MIT">MIT</option>
+                            <option value="Apache-2.0">Apache-2.0</option>
+                            <option value="GPL-3.0">GPL-3.0</option>
+                            <option value="BSD-3-Clause">BSD-3-Clause</option>
+                            <option value="Unlicense">Unlicense</option>
+                            <option value="None">无</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="style">README 风格</label>
+                        <select id="style">
+                            <option value="clean">Clean（简洁）</option>
+                            <option value="cool">Cool（酷炫）</option>
+                            <option value="minimal">Minimal（极简）</option>
+                            <option value="gradient">Gradient（渐变）</option>
+                        </select>
+                    </div>
+                    <button id="generateBtn" class="btn-primary">✨ 生成 README</button>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <div class="card">
+                    <div class="preview-header">
+                        <h2>📄 预览</h2>
+                        <div class="preview-actions">
+                            <button id="copyBtn" class="btn-secondary">📋 复制</button>
+                            <button id="downloadBtn" class="btn-secondary">💾 下载</button>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <pre id="preview"><code>请填写左侧表单，然后点击「生成 README」按钮...</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Made with ❤️ by README Palette | <a href="https://github.com" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
