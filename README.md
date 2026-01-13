@@ -255,18 +255,22 @@ Issues and Pull Requests are welcome!
 
 当然，你也可以给我一些比特币（BTC），让我体验一下收到陌生人赠予的钱的喜悦以及一夜暴富的刺激。当然，如果你愿意赠送，完全是自愿的，我也不会退还。我只接受比特币（BTC）。以下是我的地址，仅支持 SegWit 地址：👇
 
-bc1qk0wxq3dhy5rfyjzqqa6l4k26p4cggrr2cdcrtr
+BTC：bc1qsw97mw7jg0nfz6fh7u9u3sdda8dy5l9ss2tz8v
 
-ETHandUSDT：0x3ea65897e87747Bea409aBcAe74F4c929083B91B
+ETH：0xa6b734F1cABa842F97c18A092fC77fa4f15EF225
+
+USDT：TYZCFhCgHKFEM48z6y5ZCdu5CLdyz6ZdW4
 
 </td>
 <td width="50%">
 
 Of course, you can also give me BTC so I can experience the joy of receiving money from a stranger and the thrill of sudden wealth. Of course, if you give it, it's entirely voluntary, and I won't return it. I only accept BTC. Below is my address, SEGWIT only:👇:
 
-bc1qk0wxq3dhy5rfyjzqqa6l4k26p4cggrr2cdcrtr
+BTC：bc1qsw97mw7jg0nfz6fh7u9u3sdda8dy5l9ss2tz8v
 
-ETHandUSDT：0x3ea65897e87747Bea409aBcAe74F4c929083B91B
+ETH：0xa6b734F1cABa842F97c18A092fC77fa4f15EF225
+
+USDT：TYZCFhCgHKFEM48z6y5ZCdu5CLdyz6ZdW4
 
 </td>
 </tr>
@@ -301,6 +305,7 @@ This project is licensed under the [MIT](LICENSE) License.
 
 
 ⭐ 如果这个项目对你有帮助，欢迎给个 Star！| If this project helps you, please give it a Star!
+
 
 
 
